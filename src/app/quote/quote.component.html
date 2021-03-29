@@ -5,7 +5,7 @@
     <div *ngFor="let quote of quotes; let i=index">
         <app-quote-details [quote]="quote"></app-quote-details>
         <button (click)="like(i)">Like</button>
-        <button>Dislike</button>
+        <button (click)="dislike(i)">Dislike</button>
         <button>Delete</button>
     </div>
 </div>

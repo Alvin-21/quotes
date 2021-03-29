@@ -18,6 +18,10 @@ export class QuoteComponent implements OnInit {
     this.quotes[i].like += 1;
   }
 
+  dislike(i: number){
+    this.quotes[i].dislike += 1;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
