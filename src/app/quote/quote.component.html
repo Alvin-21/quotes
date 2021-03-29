@@ -1,7 +1,8 @@
 <div>
     <h1>QUOTES</h1>
     <hr>
-    <p>Welcome to Quotes webpage, where you can input any quote of your choosing and it will be easily be displayed for you and others to view.</p>
-    <p>You may enter your quote via the form below.</p>
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    <div *ngFor="let quote of quotes">
+        <app-quote-details [quote]="quote"></app-quote-details>
+    </div>
 </div>

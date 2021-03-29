@@ -8,10 +8,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-  quotes: Quote[] = [
-   new Quote("The greatest glory in living lies not in never falling, but in rising every time we fall", "Nelson Mandela", "Alvin"),
-   new Quote("The way to get started is to quit talking and begin doing", "Walt Disney", "Jane")
-  ];
+  quotes: Quote[] = [];
 
   addNewQuote(quote: Quote){
     this.quotes.push(quote);
