@@ -14,6 +14,10 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote);
   }
 
+  like(i: number){
+    this.quotes[i].like += 1;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

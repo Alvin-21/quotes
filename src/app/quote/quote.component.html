@@ -2,9 +2,9 @@
     <h1>QUOTES</h1>
     <hr>
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-    <div *ngFor="let quote of quotes">
+    <div *ngFor="let quote of quotes; let i=index">
         <app-quote-details [quote]="quote"></app-quote-details>
-        <button>Like</button>
+        <button (click)="like(i)">Like</button>
         <button>Dislike</button>
         <button>Delete</button>
     </div>
