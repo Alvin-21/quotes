@@ -13,6 +13,10 @@ export class QuoteComponent implements OnInit {
    new Quote("The way to get started is to quit talking and begin doing", "Walt Disney", "Jane")
   ];
 
+  addNewQuote(quote: Quote){
+    this.quotes.push(quote);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

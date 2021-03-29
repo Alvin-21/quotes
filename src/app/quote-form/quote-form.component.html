@@ -1,9 +1,9 @@
 <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <label for="quote">Quote</label>
-    <input type="text" name="quote" id="quote" [(ngModel)]="newQuote.quote" required>
+    <input type="text" name="quote" id="quote" [(ngModel)]="quote" required>
     <label for="author">Author</label>
-    <input type="text" name="author" id="author" [(ngModel)]="newQuote.author" required>
+    <input type="text" name="author" id="author" [(ngModel)]="author" required>
     <label for="publisher">Name</label>
-    <input type="text" name="publisher" id="publisher" [(ngModel)]="newQuote.quote" required>
+    <input type="text" name="publisher" id="publisher" [(ngModel)]="publisher" required>
     <button type="submit">Submit</button>
 </form>
