@@ -22,6 +22,10 @@ export class QuoteComponent implements OnInit {
     this.quotes[i].dislike += 1;
   }
 
+  removeQuote(i: number){
+    this.quotes.splice(i, 1);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
