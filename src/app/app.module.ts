@@ -8,6 +8,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { TimePassedPipe } from './time-passed.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TimePassedPipe } from './time-passed.pipe';
     QuoteComponent,
     QuoteFormComponent,
     QuoteDetailsComponent,
-    TimePassedPipe
+    TimePassedPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

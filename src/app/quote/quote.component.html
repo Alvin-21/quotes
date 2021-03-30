@@ -3,6 +3,7 @@
     <hr>
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     <div *ngFor="let quote of quotes; let i=index">
+        <p appHighlight *ngIf="quote.like == highestLike">{{quote.quote}}</p>
         <app-quote-details [quote]="quote"></app-quote-details>
         <button (click)="like(i)">Like</button>
         <button (click)="dislike(i)">Dislike</button>
