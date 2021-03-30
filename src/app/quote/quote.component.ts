@@ -14,9 +14,14 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote);
   }
 
+  likes: number[] = [];
+
   like(i: number){
     this.quotes[i].like += 1;
+    this.likes.push(this.quotes[i].like);
   }
+
+  highestLike: any = Math.max(...this.likes);
 
   dislike(i: number){
     this.quotes[i].dislike += 1;
