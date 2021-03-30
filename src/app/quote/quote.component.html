@@ -1,6 +1,8 @@
 <div>
     <h1>QUOTES</h1>
     <hr>
+    <p>Welcome to Quotes webpage, where you are able to post a quote of your choosing and it can be displayed for you and others to view.</p>
+    <p>You may enter your preferred quote using the form below.</p>
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     <div *ngFor="let quote of quotes; let i=index">
         <p appHighlight *ngIf="quote.like == highestLike">{{quote.quote}}</p>
