@@ -1,9 +1,17 @@
-<form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-    <label for="quote">Quote</label>
-    <input type="text" name="quote" id="quote" [(ngModel)]="quote" required>
-    <label for="author">Author</label>
-    <input type="text" name="author" id="author" [(ngModel)]="author" required>
-    <label for="publisher">Name</label>
-    <input type="text" name="publisher" id="publisher" [(ngModel)]="publisher" required>
-    <button type="submit">Submit</button>
-</form>
+<div class="container-fluid">
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <div class="form-group">
+            <label for="quote">Quote</label>
+            <input class="form-control" type="text" name="quote" id="quote" [(ngModel)]="quote" required>
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input class="form-control" type="text" name="author" id="author" [(ngModel)]="author" required>
+        </div>
+        <div class="form-group">
+            <label for="publisher">Name</label>
+            <input class="form-control" type="text" name="publisher" id="publisher" [(ngModel)]="publisher" required>
+        </div>
+        <button class="btn btn-primary btn-md btn-block" type="submit">Submit</button>
+    </form>
+</div>

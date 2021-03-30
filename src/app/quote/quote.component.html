@@ -1,5 +1,5 @@
-<div>
-    <h1>QUOTES</h1>
+<div class="container-fluid">
+    <h1 class="text-center">QUOTES</h1>
     <hr>
     <p>Welcome to Quotes webpage, where you are able to post a quote of your choosing and it can be displayed for you and others to view.</p>
     <p>You may enter your preferred quote using the form below.</p>
@@ -7,8 +7,8 @@
     <div *ngFor="let quote of quotes; let i=index">
         <p appHighlight *ngIf="quote.like == highestLike">{{quote.quote}}</p>
         <app-quote-details [quote]="quote"></app-quote-details>
-        <button (click)="like(i)">Like</button>
-        <button (click)="dislike(i)">Dislike</button>
-        <button (click)="removeQuote(i)">Delete</button>
+        <button class="btn btn-outline-success" (click)="like(i)">Like</button>
+        <button class="btn btn-outline-secondary" (click)="dislike(i)">Dislike</button>
+        <button class="btn btn-outline-danger" (click)="removeQuote(i)">Delete</button>
     </div>
 </div>
